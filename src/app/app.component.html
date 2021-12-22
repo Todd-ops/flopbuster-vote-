@@ -1,0 +1,43 @@
+<h1>{{title}}</h1>
+
+{{selectedIndex}}
+
+<div style="display: flex; flex-wrap: wrap">
+    <div style="margin: 25px">
+      <h3 [hidden]="!isSelected(0)">Chosen!</h3>
+      <img src="https://m.media-amazon.com/images/M/MV5BMTg4NTIyMDA0MV5BMl5BanBnXkFtZTcwNDA4MTI2MQ@@._V1_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTg4NTIyMDA0MV5BMl5BanBnXkFtZTcwNDA4MTI2MQ@@._V1_FMjpg_UY451_.jpg 319w, https://m.media-amazon.com/images/M/MV5BMTg4NTIyMDA0MV5BMl5BanBnXkFtZTcwNDA4MTI2MQ@@._V1_FMjpg_UX354_.jpg 354w" data-image-id="rm2626852352-curr" alt="Howard the Duck (1986)" class="MediaViewerImagestyles__PortraitImage-sc-1qk433p-0 bnaOri">
+      <div>
+        <button [disabled]="anySelected() && !isSelected(0)" (click)="onButtonClick(0)">{{getButtonText(0)}}</button>
+      </div>
+    </div>
+
+
+
+    <div style="margin: 25px">
+      <h3 [hidden]="!isSelected(1)">Chosen!</h3>
+      <img src="https://m.media-amazon.com/images/M/MV5BMjA3MDI4MDQ4NF5BMl5BanBnXkFtZTcwNjMyNDUzMw@@._V1_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMjA3MDI4MDQ4NF5BMl5BanBnXkFtZTcwNjMyNDUzMw@@._V1_FMjpg_UY474_.jpg 319w, https://m.media-amazon.com/images/M/MV5BMjA3MDI4MDQ4NF5BMl5BanBnXkFtZTcwNjMyNDUzMw@@._V1_FMjpg_UY711_.jpg 479w, https://m.media-amazon.com/images/M/MV5BMjA3MDI4MDQ4NF5BMl5BanBnXkFtZTcwNjMyNDUzMw@@._V1_FMjpg_UY337_.jpg 227w, https://m.media-amazon.com/images/M/MV5BMjA3MDI4MDQ4NF5BMl5BanBnXkFtZTcwNjMyNDUzMw@@._V1_FMjpg_UY576_.jpg 388w, https://m.media-amazon.com/images/M/MV5BMjA3MDI4MDQ4NF5BMl5BanBnXkFtZTcwNjMyNDUzMw@@._V1_FMjpg_UY720_.jpg 485w" data-image-id="rm3215691008-prev" alt="Isla Fisher, Bill Hader, Danny McBride, Jorma Taccone, and Andy Samberg in Hot Rod (2007)">
+      <div>
+        <button [disabled]="anySelected() && !isSelected(1)" (click)="onButtonClick(1)">{{getButtonText(1)}}</button>
+      </div>
+    </div>
+
+
+
+    <div style="margin: 25px">
+      <h3 [hidden]="!isSelected(2)">Chosen!</h3>
+      <img  src="https://m.media-amazon.com/images/M/MV5BMTUzOTkwOTQ3NV5BMl5BanBnXkFtZTcwNDAwMDEzMQ@@._V1_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BMTUzOTkwOTQ3NV5BMl5BanBnXkFtZTcwNDAwMDEzMQ@@._V1_FMjpg_UX279_.jpg 279w" data-image-id="rm2788990208-prev" alt="Peter Billingsley in The Dirt Bike Kid (1985)">      
+        <div>
+        <button [disabled]="anySelected() && !isSelected(2)" (click)="onButtonClick(2)">{{getButtonText(2)}}</button>
+      </div>
+    </div>
+
+
+
+    <div style="margin: 25px">
+      <h3 [hidden]="!isSelected(3)">Chosen!</h3>
+      <img src="https://m.media-amazon.com/images/M/MV5BZWQ4NWQ1M2QtZjI0Mi00MGE2LTk2NzItMTQ1ZDJiOGY1MDEyXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BZWQ4NWQ1M2QtZjI0Mi00MGE2LTk2NzItMTQ1ZDJiOGY1MDEyXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_FMjpg_UY474_.jpg 319w, https://m.media-amazon.com/images/M/MV5BZWQ4NWQ1M2QtZjI0Mi00MGE2LTk2NzItMTQ1ZDJiOGY1MDEyXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_FMjpg_UY712_.jpg 479w, https://m.media-amazon.com/images/M/MV5BZWQ4NWQ1M2QtZjI0Mi00MGE2LTk2NzItMTQ1ZDJiOGY1MDEyXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_FMjpg_UY337_.jpg 227w, https://m.media-amazon.com/images/M/MV5BZWQ4NWQ1M2QtZjI0Mi00MGE2LTk2NzItMTQ1ZDJiOGY1MDEyXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_FMjpg_UX1011_.jpg 1011w" data-image-id="rm1422859520-prev" alt="Sean Hayes, Chris Diamantopoulos, and Will Sasso in The Three Stooges (2012)">      
+        <div>
+          <button [disabled]="anySelected() && !isSelected(3)" (click)="onButtonClick(3)">{{getButtonText(3)}}</button>
+        </div>
+    </div>
+</div>
